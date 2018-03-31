@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1499186791 source:d:\julyy0517\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1499188651 source:d:\julyy0517\trash1.c
+	<stdio.h>
+
+1499191016 source:d:\julyy0517\trash2.c
+	<stdio.h>
+	<string.h>
+
+1499192249 source:d:\julyy0517\lex.c
+	<stdio.h>
+	<strings.h>
+
+1499195737 source:d:\julyy0517\scan.c
+	<stdio.h>
+	<string.h>
+

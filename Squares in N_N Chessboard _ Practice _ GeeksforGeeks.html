@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Squares in  N*N Chessboard | Practice | GeeksforGeeks</title>
+		<link rel="icon" href="http://contribute.geeksforgeeks.org/wp-content/themes/iconic-one/images/gfglogo.ico" type="image/x-icon">
+		
+		
+		<meta name="keywords" content="programming,coding,online, code online, online judge, practice, run code, test, expected outcome, programming competition, programming contest, online programming, online computer programming">
+		<meta name="description" content="Find total number of Squares in a N*N cheesboard.
+
+Input:
+
+The first line contains an integer T, depicting total number of test cases.&amp;nbsp;
+Then following T lines contains an integer N that is the side of the chessboard.
+
+
+Output:
+
+Each se ">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:image" content="http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/gfg_200X200.png">
+		 <meta property="og:image:type" content="image/png">
+                <meta property="og:image:width" content="200">
+                <meta property="og:image:height" content="200">
+
+		<script async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/async-ads.js.download"></script><script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/ca-pub-9465609616171866.js.download"></script><script type="text/javascript" async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/cse.js.download"></script><script id="facebook-jssdk" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/sdk.js.download"></script><script async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/analytics.js.download"></script><script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/jquery.min.js.download"></script>
+	        <script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/bootstrap.min.js.download"></script>
+        	<script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/practice1.0.js.download"></script>        
+		<!--	<script src="ckeditor/ckeditor.js"></script> -->
+		<link rel="stylesheet" href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/styleV10.css">
+		<link href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/icon" rel="stylesheet">
+		<meta property="og:title" content="Squares in  N*N Chessboard | Practice | GeeksforGeeks ">
+<script>document.title="Squares in  N*N Chessboard | Practice | GeeksforGeeks";var def_lang ="";</script>		<style>
+            /*------------------Subtracting px based on the height of navbar-----------------*/
+            .jumbotron{
+                height: calc(100vh - 134px);
+            }
+            @media (min-width: 768px) and (max-width: 1114px){
+   			   .jumbotron{
+        			height: calc(100vh - 213px);
+      			}
+    		}
+		    @media (min-width: 1115px) and (max-width: 1295px){
+		       .jumbotron{
+		           height: calc(100vh - 199px);
+		        }
+		    }
+		    @media (min-width: 1296px) and (max-width: 1405px){
+	      		.jumbotron{
+	        		height: calc(100vh - 184px);
+		        }
+		    }
+		    @media(min-width: 1406px){
+      			.jumbotron{
+	        		height: calc(100vh - 134px);
+	      		}
+		    }
+		    @media (max-width: 767px){
+	      		.jumbotron{
+		        	height: auto;
+		      	}
+		    }
+    	</style>
+	 <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-71763465-1', 'auto');
+                  ga('send', 'pageview');
+
+        </script>
+	
+	<style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style><script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/default+en.css" rel="stylesheet"><link type="text/css" href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/default+en.I.js.download"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #4CB96B;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #4CB96B;
+background-color: #4CB96B;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #4CB96B;
+background-color: #E9E9E9;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #4CB96B;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #4CB96B;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #0000CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #0000CC;
+}
+.gsc-cursor-page {
+color: #0000CC;
+}
+a.gsc-trailing-more-results:link {
+color: #0000CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #000000;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #008000;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #4CB96B;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #4CB96B;
+background-color: #FFFFFF;
+color: #0000CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #336699;
+background-color: #FFFFFF;
+}
+.gsc-completion-title {
+color: #0000CC;
+}
+.gsc-completion-snippet {
+color: #000000;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #0000CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #0000CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #000000;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #008000;
+}</style><script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/theme-vibrant_ink.js.download"></script><script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/mode-c_cpp.js.download"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(http://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><style id="ace-vibrant-ink">.ace-vibrant-ink .ace_gutter {background: #1a1a1a;color: #BEBEBE}.ace-vibrant-ink .ace_print-margin {width: 1px;background: #1a1a1a}.ace-vibrant-ink {background-color: #0F0F0F;color: #FFFFFF}.ace-vibrant-ink .ace_cursor {color: #FFFFFF}.ace-vibrant-ink .ace_marker-layer .ace_selection {background: #6699CC}.ace-vibrant-ink.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #0F0F0F;}.ace-vibrant-ink .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-vibrant-ink .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #404040}.ace-vibrant-ink .ace_marker-layer .ace_active-line {background: #333333}.ace-vibrant-ink .ace_gutter-active-line {background-color: #333333}.ace-vibrant-ink .ace_marker-layer .ace_selected-word {border: 1px solid #6699CC}.ace-vibrant-ink .ace_invisible {color: #404040}.ace-vibrant-ink .ace_keyword,.ace-vibrant-ink .ace_meta {color: #FF6600}.ace-vibrant-ink .ace_constant,.ace-vibrant-ink .ace_constant.ace_character,.ace-vibrant-ink .ace_constant.ace_character.ace_escape,.ace-vibrant-ink .ace_constant.ace_other {color: #339999}.ace-vibrant-ink .ace_constant.ace_numeric {color: #99CC99}.ace-vibrant-ink .ace_invalid,.ace-vibrant-ink .ace_invalid.ace_deprecated {color: #CCFF33;background-color: #000000}.ace-vibrant-ink .ace_fold {background-color: #FFCC00;border-color: #FFFFFF}.ace-vibrant-ink .ace_entity.ace_name.ace_function,.ace-vibrant-ink .ace_support.ace_function,.ace-vibrant-ink .ace_variable {color: #FFCC00}.ace-vibrant-ink .ace_variable.ace_parameter {font-style: italic}.ace-vibrant-ink .ace_string {color: #66FF00}.ace-vibrant-ink .ace_string.ace_regexp {color: #44B4CC}.ace-vibrant-ink .ace_comment {color: #9933CC}.ace-vibrant-ink .ace_entity.ace_other.ace_attribute-name {font-style: italic;color: #99CC99}.ace-vibrant-ink .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGBgYNDTc/oPAALPAZ7hxlbYAAAAAElFTkSuQmCC) right repeat-y}
+/*# sourceURL=ace/css/ace-vibrant-ink */</style><script id="_fbn_projs" type="text/javascript" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/C6ADVKE.json"></script><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}#gsc-i-id1::-webkit-input-placeholder{font-size:14px}#gsc-i-id1:-moz-placeholder{font-size:14px}#gsc-i-id1::-moz-placeholder{font-size:14px}#gsc-i-id1:-ms-input-placeholder{font-size:14px}#gsc-i-id1:focus::-webkit-input-placeholder{color:transparent}#gsc-i-id1:focus:-moz-placeholder{color:transparent}#gsc-i-id1:focus::-moz-placeholder{color:transparent}#gsc-i-id1:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><script type="text/javascript" async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/embed.js.download"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.e52b2f99308b09ef7684f62bab4d6f07.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.837e7ac45e6f038477f9c6774eede58f.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.28338403eeacac8e9c44d9dbee9ad45e.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"></head>
+	<body style="position:relative;">
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '534961220012939',
+		      xfbml      : true,
+		      version    : 'v2.5'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<button id="scrollTopBtn" type="button" class="btn btn-success" style="background-color: rgb(76, 185, 107); display: block; opacity: 1;">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</button>
+		<div class="container-fluid">
+			<!-- <div class="row" style="background-color:#D8D8D8;display:none;">
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12" style="font-size:16px;">
+											<a href="http://auth.geeksforgeeks.org/?to=http%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Fsquares-in-nn-chessboard%2F0">Login</a>
+					<?php# } else { ?>
+						Hello <a style="color:#0D7525;" href="user-profile.php?user=Uttam Sinha"><?php# echo $gfgUser->getUser(); ?></a>
+						&nbsp; | &nbsp; &nbsp;
+						<a style="color:#0D7525;" href="logout.php">Logout</a>
+					<?php# } ?>
+				</div>
+				<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 text-right">
+					<a href="ask.php" class="askTextLink">Contribute a Question</a>
+				</div>
+			</div> -->
+			<div class="row whiteHeaderStripBar">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+					<a class="logo" href="http://practice.geeksforgeeks.org/">Practice</a><b style="color:#005C00;">&nbsp;&nbsp;&nbsp;&nbsp;BETA</b>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" style="border-width:0px;">    
+		                <script>
+			  				(function() {
+							    var cx = '005855190823060106138:ggjtcjog1xu';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//cse.google.com/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+						</script>
+						<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="en" dir="ltr" spellcheck="false" placeholder="Custom Search" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(&quot;http://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/googlelogo_grey_46x15dp.png" class="gsc-branding-img" srcset="https://www.google.com/cse/static/images/2x/googlelogo_grey_46x15dp.png 2x"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+                </div>
+				<div class="col-lg-6 col-md-6 col-sm-4 col-xs-12 text-center">
+					<hgroup class="text-right" style="margin-top:5px;">   
+					  <a class="products" href="http://www.geeksforgeeks.org/">GeeksforGeeks</a>
+					  <a class="products" href="http://quiz.geeksforgeeks.org/gate-corner-2/">GATE CS</a>
+					  <a class="products" href="http://quiz.geeksforgeeks.org/placements/">Placements</a>
+					  <a class="products" href="https://www.youtube.com/geeksforgeeksvideos/">Videos</a>
+					  <a class="products" href="http://www.geeksforgeeks.org/contribute/">Contribute</a>
+					</hgroup>
+					<div class="text-right" style="font-size: 20px;">
+													Hello <a style="color:#0D7525;" href="http://practice.geeksforgeeks.org/user-profile.php?user=Uttam%20Sinha">Uttam Sinha</a>
+											</div>
+
+					<!-- <a hidden href="https://feedburner.google.com/fb/a/mailverify?uri=geeksforgeeks/LCdL" title="Subscribe to Practice at GeeksforGeeks" rel="alternate" type="application/rss+xml">
+						<img src="//feedburner.google.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/>
+					</a>
+					<a href="http://feeds.feedburner.com/geeksforgeeks/LCdL" title="Subscribe to Practice at GeeksforGeeks" rel="alternate" type="application/rss+xml"></a>		
+					<a class="logo" href="http://geeksforgeeks.org/">GeeksforGeeks</a> -->
+				</div>
+			</div>
+			<div class="row">
+				<nav class="navbar navbar-default" style="margin-bottom:20px;">
+					<div class="navbar-header" style="background-color: #fff;">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse" style="padding:0;">
+						<ul class="menu nav navbar-nav" style="margin:0px;">
+							<div class="col-xs-12 col-sm-5">
+								<div class="row">
+									<li class="col-xs-12 col-sm-3 text-center navhover"><a class="wtext diff" href="http://practice.geeksforgeeks.org/School/0/0/">School</a></li>
+									<li class="col-xs-12 col-sm-2 text-center navhover"><a class="wtext diff" href="http://practice.geeksforgeeks.org/Basic/0/0/">Basic</a></li>
+									<li class="col-xs-12 col-sm-2 text-center navhover"><a class="wtext diff" href="http://practice.geeksforgeeks.org/Easy/0/0/">Easy</a></li>
+									<li class="col-xs-12 col-sm-3 text-center navhover"><a class="wtext diff" href="http://practice.geeksforgeeks.org/Medium/0/0/">Medium</a></li>
+									<li class="col-xs-12 col-sm-2 text-center navhover"><a class="wtext diff" href="http://practice.geeksforgeeks.org/Hard/0/0/">Hard</a></li>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7">
+								<div class="row">
+									<li class="col-xs-12 col-sm-3 text-center navhover"><a class="wtext highlight diff" href="http://practice.geeksforgeeks.org/recent.php">What's New?</a></li>
+									<li class="col-xs-12 col-sm-2 text-center navhover" style="padding:0;"><a class="wtext diff" href="http://practice.geeksforgeeks.org/subjective-page.php">Subjective</a></li>
+									<li class="col-xs-12 col-sm-2 text-center navhover" style="padding:0;"><a class="wtext diff" href="http://practice.geeksforgeeks.org/featured.php">Featured</a></li>
+									<li class="col-xs-12 col-sm-3 text-center navhover" style="padding:0;"><a class="wtext diff" href="http://practice.geeksforgeeks.org/ask.php">Contribute a Problem</a></li>
+									<li class="dropdown col-xs-12 col-sm-2 text-center navhover">
+										<a href="http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0#" class="dropdown-toggle diff" style="font-size: 15px; color: white; hover:none;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <b>Help</b> <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+					                        <li><a style="background-color: #4CB96B; color:white; font-size: 17px;" href="http://practice.geeksforgeeks.org/faq.php"><b>FAQ</b></a></li>
+								        	<li><a style="background-color: #4CB96B; color:white; font-size: 17px;" href="http://practice.geeksforgeeks.org/contribute.php"><b>Report/Contribute</b></a></li>
+										</ul>
+		             				</li>
+		             			</div>
+		             		</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		<script>
+$(document).ready(function() { $('.dropdown-toggle').dropdown(); });
+</script>
+	<script>
+            var isDefaultCode = 0 ;
+        </script>
+<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+<link href="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/jquery-ui.css" rel="stylesheet">
+
+<script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/jquery-ui.js.download"></script>
+
+<div class="modal fade" id="suggestTestCaseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                	<h4 class="modal-title text-center" id="myModalLabel">Please suggest Test-Cases that can help in better evaluation of submissions !!</h4>
+                </div>
+                <div class="modal-body">
+			  <form class="form-horizontal" role="form">
+	                 	 <div class="form-group">
+        	            		<label class="col-sm-1 control-label" for="inputTestCase">Input</label>
+	                    		<div class="col-sm-11">
+						<textarea id="inputTestCase" class="form-control" rows="7" cols="100" name="inputTestCase"></textarea>
+                	    		</div>
+				</div>
+			  	<div class="form-group">
+			    		<label class="col-sm-1 control-label" for="outputTestCase">Output</label>
+                            			<div class="col-sm-11">
+                                			<textarea id="outputTestCase" class="form-control" rows="7" cols="100" name="outputTestCase"></textarea>
+                        		    	</div>
+				</div>
+		 	  </form>
+		</div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" style="float:left;">Close</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal" id="sendTestCaseMail" style="float:left;">Send</button>
+                </div>
+        </div>
+        </div>
+</div>
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-7 col-xs-12">
+      <ol class="breadcrumb whiteBgColor">
+        <li><a href="http://practice.geeksforgeeks.org/">Home</a></li>
+        <li><a href="http://practice.geeksforgeeks.org/Easy/0/0/">Easy</a></li>          <li class="active">Squares in  N*N Chessboard</li>
+      </ol>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col-xs-12 col-sm-2 text-center leftTreeDiv">
+      <!-- get top 10 company and problem tags name here -->
+
+<div class="whiteBgColor">
+	<ul class="tree text-left">
+		<li class="branch">
+			<i class="indicator glyphicon glyphicon-minus-sign toggleTree"></i>
+			<a class="toggleTree">Company Tags</a>
+			<ul class="treeElements">
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Amazon/">Amazon</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Microsoft/">Microsoft</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Oracle/">Oracle</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Samsung/">Samsung</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Adobe/">Adobe</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Synopsys/">Synopsys</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Infosys/">Infosys</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Wipro/">Wipro</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Cisco/">Cisco</a>
+					</li>
+				    				<li>
+    					<a href="http://practice.geeksforgeeks.org/company/Morgan-Stanley/">Morgan-Stanley</a>
+					</li>
+						        <a href="http://practice.geeksforgeeks.org/company-tags" style="color:#4cb96b;text-shadow: 1px 1px #ccc;">show more</a>
+    	    </ul>
+		</li>
+	</ul>
+</div>
+	<div style="margin:10px 0px;">
+	<script async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/adsbygoogle.js.download"></script>
+<!-- PracticeResponsiveLeft -->
+<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-9465609616171866" data-ad-slot="2734704834" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:195px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:195px;background-color:transparent"><iframe width="195" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:195px;height:600px;" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	</div>
+<div class="whiteBgColor">
+	<ul class="tree text-left">
+		<li class="branch">
+			<i class="indicator glyphicon glyphicon-minus-sign toggleTree"></i>
+			<a class="toggleTree">Topic Tags</a>
+			<ul class="treeElements">
+			      <li><a href="http://practice.geeksforgeeks.org/topics/maths/">Maths</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/array/">Array</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/Dynamic-Programming/">Dynamic-Programming</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/Greedy-Algorithm/">Greedy-Algorithm</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/hashing/">Hashing</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/tree/">Tree</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/bit/">Bit</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/matrix/">Matrix</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/backtracking/">Backtracking</a></li>
+                              <li><a href="http://practice.geeksforgeeks.org/topics/Operating%20System/">Operating System</a></li>
+
+		        <a href="http://practice.geeksforgeeks.org/topic-tags" style="color:#4cb96b;text-shadow: 1px 1px #ccc;">show more</a>
+    	    </ul>
+		</li>
+	</ul>
+</div>
+    </div>
+    <div class="col-sm-7 col-xs-12">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-7 col-xs-12">
+                          </div>
+					<div class="col-sm-5 col-xs-12">                          
+						<h4 style="float:right;margin-right:15px">Submissions : <u><a style="color:green" href="http://practice.geeksforgeeks.org/problem_submissions.php?pid=149">1675</a></u> Accuracy : 								<p style="color:green;  display:inline">51.7</p> 
+														</h4>
+
+                        
+  					</div>
+        </div>
+        <div class="row">
+                        <div id="border" class="well whiteBgColor">
+			<div class="row">		
+			<div class="col-lg-12" style="font-size:25px; border-bottom:1px solid silver">
+			<strong>Squares in  N*N Chessboard</strong>
+	
+			
+					 					
+				</div> </div>
+				<div class="row">
+				<div class="col-md-6">
+				    <button type="button" class="btn btn-warning btn-xs showTag" style="border-radius:3px;">Show Topic Tags</button>&nbsp;
+                                    <button type="button" class="btn btn-warning btn-xs hideTag" style="border-radius:3px;display:none;">Hide Topic Tags</button>&nbsp;
+
+                                                                                         <a href="http://practice.geeksforgeeks.org/topics/Maths/" style="float:left; text-decoration:none;">
+                                                <button type="button" class="btn btn-info btn-xs topicTags" style="display:none">Maths                                                </button>&nbsp;</a>                                                 <a href="http://practice.geeksforgeeks.org/topics/number%20theory%20/" style="float:left; text-decoration:none;">
+                                                <button type="button" class="btn btn-info btn-xs topicTags" style="display:none">number theory                                                 </button>&nbsp;</a>                                                 <a href="http://practice.geeksforgeeks.org/topics/permutation/" style="float:left; text-decoration:none;">
+                                                <button type="button" class="btn btn-info btn-xs topicTags" style="display:none">permutation                                                </button>&nbsp;</a>				</div>
+				
+				<div class="col-md-6">
+				                                                 <a href="http://practice.geeksforgeeks.org/company/Goldman%20Sachs/" style="float:right; text-decoration:none;"> &nbsp; 
+                                                 <button type="button" class="btn btn-info btn-xs">Goldman Sachs</button></a>
+                                                                                         <a href="http://practice.geeksforgeeks.org/company/MAQ%20Software/" style="float:right; text-decoration:none;"> &nbsp; 
+                                                 <button type="button" class="btn btn-info btn-xs">MAQ Software</button></a>
+                                        				</div>
+				</div>
+			               <br>
+                                <!-- ----------------Media Buttons -->
+		<!--
+                                <div class="col-lg-12" style="margin-left:-32px; width:860px; margin-top:5px;">
+                                        <div 
+                                  	class="fb-like col-lg-6"
+                                  data-share="true"
+                                  data-width="350"
+                                  data-show-faces="true">
+                                	</div>
+	                                <div class="col-lg-6" style="text-align:right;" >
+                                <a  href="https://twitter.com/PracticeGfG" class="twitter-follow-button" data-show-count="false">Follow @PracticeGfG</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                        </script>
+                        <a  href="https://twitter.com/share" class="twitter-share-button" data-via="PracticeGfG" data-hashtags="PracticeGfG" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        	                	</div>  
+				</div>  -->
+                                        <div>
+
+                                                   
+                                                                <p><span style="font-size:20px">Find total number of Squares in a N*N cheesboard.</span></p>
+
+<p><span style="font-size:20px"><strong>Input:</strong></span></p>
+
+<p><span style="font-size:20px">The first line contains an integer T, depicting total number of test cases.&nbsp;<br>
+Then following T lines contains an integer N that is the side of the chessboard.</span></p>
+
+<p><br>
+<span style="font-size:20px"><strong>Output:</strong></span></p>
+
+<p><span style="font-size:20px">Each seperate line showing the maximum number of squares&nbsp;possible.</span></p>
+
+<p><br>
+<span style="font-size:20px"><strong>Constraints:</strong></span></p>
+
+<p><span style="font-size:20px">1 ≤ T ≤ 100<br>
+1 ≤ N ≤ 100</span><br>
+&nbsp;</p>
+
+<p><span style="font-size:20px"><strong>Example:</strong></span></p>
+
+<p><span style="font-size:20px">Input :</span></p>
+
+<p><span style="font-size:20px">2<br>
+1<br>
+2</span></p>
+
+<p><span style="font-size:20px">Output :</span></p>
+
+<p><span style="font-size:20px">1<br>
+5</span></p>
+
+                                                <h4>**For More Examples Use Expected Output**</h4>
+                                                <br>
+
+                                                </div>
+                                                                                                                                         </div>
+                                </div>
+
+				<div class="row">                       
+<ol class="breadcrumb whiteBgColor" style="float:left">New to competitive programming?  Please see <a href="http://www.geeksforgeeks.org/how-to-begin-with-competitive-programming/">How to Begin?</a>and&nbsp;<a href="http://practice.geeksforgeeks.org/pickACategory.php">How to Pick a Category?</a></ol>
+<h4 style="float:right;margin-right:15px"><u></u> 
+</h4>
+</div>
+
+
+
+
+
+
+                                <div class="row">
+											<script> var displayLanguage</script>
+					                                        <input type="submit" class="lang btn btn-success" id="c" value="C (gcc 4.8)" style="background-color: rgb(70, 185, 107);">
+                                                                                                                            <input type="submit" class="lang btn btn-success" id="cpp" value="C++ (gcc 5.4)" style="background-color: rgb(0, 128, 0);">
+                                               
+                                                                                <input type="submit" class="lang btn btn-success" id="java" value="Java (1.8)" style="background-color: rgb(70, 185, 107);">
+                                        <input type="submit" class="lang btn btn-success" id="python3" value="Python 3" style="background-color: rgb(70, 185, 107);">
+                                        	
+
+                                </div>
+				<div class="row" style="display: block;padding: 5px;">
+                                <select class="themes">
+                                        <option class="themeLight">Theme Light</option>
+                                        <option class="themeDark">Dark</option>
+                                        <option class="themeMonokai">Monokai</option>
+                                        <option class="themeGfG">GeeksforGeeks</option>
+                                </select>
+                                
+                                <a href="http://practice.geeksforgeeks.org/edit-profile.php" class="btn btn-primary btn-xs" style="margin-top: 0%;" role="button">Set Default Code</a>
+                                				<button id="resetEditor" class="btn btn-xs btn-default" style="margin-top: 0%;"><span class="glyphicon glyphicon-remove-sign"></span> Reset</button>
+
+                                <a id="full" href="javascript:void(0)">
+                                        <span class="pull-right glyphicon glyphicon-fullscreen"> 
+                                        </span>
+                                </a>
+				</div>
+				                                        <script>
+                                                        var isDefaultCode = 0 ;
+                                        </script>
+
+                                        						<script> var def_lang = ""; </script>
+                                         				
+
+				<div class="row">
+                                        <div id="border">
+                                            <div class="editorBlock">    
+						<pre id="editor" class=" ace_editor ace-vibrant-ink ace_dark ace_focus" style="font-size: 12pt;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 19px; width: 8.79688px; left: 63.7969px; top: 342px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 636px; width: 51px;"><div class="ace_gutter-cell " style="height: 19px;">1</div><div class="ace_gutter-cell " style="height: 19px;">2</div><div class="ace_gutter-cell " style="height: 19px;">3</div><div class="ace_gutter-cell " style="height: 19px;">4</div><div class="ace_gutter-cell " style="height: 19px;">5<span class="ace_fold-widget ace_start ace_open" style="height: 19px;"></span></div><div class="ace_gutter-cell " style="height: 19px;">6</div><div class="ace_gutter-cell " style="height: 19px;">7</div><div class="ace_gutter-cell " style="height: 19px;">8</div><div class="ace_gutter-cell " style="height: 19px;">9</div><div class="ace_gutter-cell " style="height: 19px;">10<span class="ace_fold-widget ace_start ace_open" style="height: 19px;"></span></div><div class="ace_gutter-cell " style="height: 19px;">11</div><div class="ace_gutter-cell " style="height: 19px;">12</div><div class="ace_gutter-cell " style="height: 19px;">13</div><div class="ace_gutter-cell " style="height: 19px;">14<span class="ace_fold-widget ace_start ace_open" style="height: 19px;"></span></div><div class="ace_gutter-cell " style="height: 19px;">15</div><div class="ace_gutter-cell " style="height: 19px;">16</div><div class="ace_gutter-cell " style="height: 19px;">17</div><div class="ace_gutter-cell " style="height: 19px;">18</div><div class="ace_gutter-cell " style="height: 19px;">19</div></div><div class="ace_gutter-active-line" style="top: 342px; height: 19px;"></div></div><div class="ace_scroller" style="left: 51px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 704px; height: 636px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 707.75px; visibility: hidden;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_bracket ace_start ace_br15" style="height:19px;width:8.796875px;top:171px;left:4px;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:19px"><span class="ace_keyword">#include</span><span class="ace_constant ace_other"> &lt;iostream&gt;</span></div><div class="ace_line" style="height:19px"><span class="ace_keyword ace_control">using</span> <span class="ace_keyword ace_operator">namespace</span> <span class="ace_identifier">std</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px"></div><div class="ace_line" style="height:19px"><span class="ace_storage ace_type">long</span> <span class="ace_storage ace_type">int</span> <span class="ace_identifier">countSquares</span><span class="ace_paren ace_lparen">(</span><span class="ace_storage ace_type">int</span> <span class="ace_identifier">n</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:19px"><span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:19px">    <span class="ace_keyword ace_control">return</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">n</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">n</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_constant ace_numeric">1</span><span class="ace_paren ace_rparen">)</span> / <span class="ace_constant ace_numeric">2</span><span class="ace_paren ace_rparen">)</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">2</span><span class="ace_keyword ace_operator">*</span><span class="ace_identifier">n</span> <span class="ace_keyword ace_operator">+</span> <span class="ace_constant ace_numeric">1</span><span class="ace_paren ace_rparen">)</span> / <span class="ace_constant ace_numeric">3</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px"><span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:19px"> </div><div class="ace_line" style="height:19px"><span class="ace_storage ace_type">int</span> <span class="ace_identifier">main</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:19px"><span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:19px">    <span class="ace_storage ace_type">int</span> <span class="ace_identifier">t</span><span class="ace_punctuation ace_operator">,</span><span class="ace_identifier">i</span><span class="ace_punctuation ace_operator">,</span><span class="ace_identifier">n</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px">  <span class="ace_support ace_function ace_C99 ace_c">scanf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"%d"</span><span class="ace_punctuation ace_operator">,</span><span class="ace_keyword ace_operator">&amp;</span><span class="ace_identifier">t</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px">  <span class="ace_keyword ace_control">for</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">i</span><span class="ace_keyword ace_operator">=</span><span class="ace_constant ace_numeric">1</span><span class="ace_punctuation ace_operator">;</span><span class="ace_identifier">i</span><span class="ace_keyword ace_operator">&lt;=</span><span class="ace_identifier">t</span><span class="ace_punctuation ace_operator">;</span><span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:19px">  <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:19px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_function ace_C99 ace_c">scanf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">"%d"</span><span class="ace_punctuation ace_operator">,</span><span class="ace_keyword ace_operator">&amp;</span><span class="ace_identifier">n</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px"><span class="ace_indent-guide">    </span>    <span class="ace_identifier">cout</span><span class="ace_keyword ace_operator">&lt;&lt;</span> <span class="ace_identifier">countSquares</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">n</span><span class="ace_paren ace_rparen">)</span><span class="ace_keyword ace_operator">&lt;&lt;</span><span class="ace_identifier">endl</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px">  <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:19px">  <span class="ace_keyword ace_control">return</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:19px"><span class="ace_paren ace_rparen">}</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer"><div class="ace_cursor" style="left: 12.7969px; top: 342px; width: 8.79688px; height: 19px; opacity: 0;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 361px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 51px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 755px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></pre>
+					   </div>
+                                                <script type="text/javascript">
+                                                        var pid = "149";
+                                                        var userid = "109576";
+                                                </script>
+						 <script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/ace.js.download" type="text/javascript" charset="utf-8"></script>
+                                                <script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/ext-language_tools.js.download"></script>
+						<script>window.urlCdn = "http://cdnpractice.geeksforgeeks.org";</script>
+                                                                                                <script src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/problem-page-3.1.js.download"></script>
+                                                                                        </div>
+                                </div>
+                                <div class="row">
+                                        <b>Result:</b>
+                                        <div class="out"><pre style="font-size:17px;"> Correct Answer.<img style="position: relative; top: 2px; left: 5px; height: 27px; margin-right:10px;" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/right.png" border="0" title="Correct Answer" alt="Correct Answer"><br>Execution Time:0
+</pre></div>
+                                </div>
+				<div class="row">
+					<h5><strong>It is recommended to test your code before clicking 'Submit' button!</strong></h5>
+				</div>
+                                <div class="row">
+                                                                                        <input style="font-size:20px;" type="submit" class="btn btn-danger" id="run" value="Submit">
+                                        
+                                        <input style="font-size:20px;" type="submit" class="btn btn-primary" id="test" value="Test">
+                                        <input style="font-size:20px;" type="submit" class="btn btn-success" id="expectedOutcome" value="Expected Output">
+					 <button type="button" class="btn btn-success" style="font-size:20px;" data-target="#suggestTestCaseModal" data-toggle="modal">Suggest Test Cases</button>
+					<a style="font-size:20px;" class="btn btn-info" href="http://practice.geeksforgeeks.org/editorial.php?pid=149" onclick="return confirm(&#39;We strongly recommend to solve this problem by your own before seeing its editorial.\n Do you really want to see its editorial?&#39;)">Editorial</a>
+					
+                                </div>
+                                <div class="row">
+                                        <form method="post" id="testarea" style="font-size: 20px;">
+                                                Enter your Test Inputs<br>
+                                                <textarea id="content" rows="9" cols="50"></textarea>
+                                <br>            <input type="submit" name="submit" class="btn btn-primary" id="testRun" value="Run">
+                                        </form>
+                                </div>
+                                <div class="row">
+                                        <form method="post" id="expectedArea" style="font-size:20px; display:none">
+                                                Enter your Input to see Correct Output<br><b>Note: Inputs should be in the same order as stated in problem.</b>
+                                                <textarea id="content" rows="9" cols="50"></textarea>
+<br>            <input type="submit" name="submit" class="btn btn-primary" id="expectedRun" value="See Output">
+                                        </form>
+                                </div>
+                                <p></p>
+                                <br><br>
+                                <div class="row">
+                                <div class="row">
+                                <div class="col-sm-offset-1 col-sm-10">
+                                </div>
+                                </div>
+                                
+                                        <a href="http://practice.geeksforgeeks.org/problem_submissions.php?pid=149&amp;isSolved=ALL&amp;lang=ALL&amp;user=ALL%20User"><button class="btn btn-primary">ALL SUBMISSIONS OF THIS PROBLEM</button></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                <a href="http://practice.geeksforgeeks.org/problem_submissions.php?pid=149&amp;isSolved=ALL&amp;lang=ALL&amp;user=Self"><button class="btn btn-primary">MY SUBMISSIONS OF THIS PROBLEM</button></a>
+                                                                        </div>
+                                <br><br>
+<style>
+#share-buttons img {
+width: 50px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+#share-buttons a:hover {
+        text-decoration: none;
+}
+</style>
+<div id="share-buttons" style="display:none">
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on Facebook">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/facebook.png" alt="Facebook">
+    </a>
+
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on Google">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/google.png" alt="Google">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on LinkedIn">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on Twitter">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/twitter.png" alt="Twitter">
+    </a>
+
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement(&#39;script&#39;);e.setAttribute(&#39;type&#39;,&#39;text/javascript&#39;);e.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;);e.setAttribute(&#39;src&#39;,&#39;http://assets.pinterest.com/js/pinmarklet.js?r=&#39;+Math.random()*99999999);document.body.appendChild(e)%7D)());" title="Share on Pinterest">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/pinterest.png" alt="Pinterest">
+    </a>
+
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on Reddit">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/reddit.png" alt="Reddit">
+</a>
+
+    <!-- StumbleUpon-->
+    <a href="http://www.stumbleupon.com/submit?url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on StumbleUpon">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/stumbleupon.png" alt="StumbleUpon">
+    </a>
+
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0" target="_blank" title="Share on Tumblr">
+        <img src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/tumblr.png" alt="Tumblr">
+    </a>
+
+</div>
+<br>
+<b>Need help with your code? Please use </b><a href="http://ide.geeksforgeeks.org/">ide.geeksforgeeks.org</a><b>, generate link and share the link here.</b>
+<br><br>
+<div style="display:flex">
+<button id="comment" class="action-button" style="width: 45%; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px, rgba(0, 0, 0, 0) 0px 6px 20px 0px; border-color: rgb(76, 185, 107); border-radius: 4px; display: none;">Load Comments</button>
+<button id="share" class="action-button" onclick="document.getElementById(&#39;share-buttons&#39;).style.display=&#39;block&#39;;this.style.display=&#39;none&#39;;" style="width:45%;cursor: pointer;margin-right:10%;padding:1%;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0);border-color: #4cb96b;border-radius: 4px;">Share this Coding Problem !!</button>
+</div>
+
+
+                        </div>
+                </div>
+                <div class="col-sm-3 col-xs-12" id="col_sidebar" style="">
+                        <!-- code by SKB -->
+<div class="border" id="sidebar" style="padding-right:0px;">
+  <div style="padding-top:10px; padding-bottom:5px;">
+    <script async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/adsbygoogle.js.download"></script>
+      <!-- PracticeAd -->
+    <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-9465609616171866" data-ad-slot="8754766436" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:336px;height:280px;" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/saved_resource(1).html"></iframe></ins></ins></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div id="leaderBoard">
+<div class="row mainLeaderBoard">
+    <div class="col-sm-12">
+        <a class="whiteLink btn btn-success hoverDarkGreen" href="http://practice.geeksforgeeks.org/ranking.php" data-toggle="tooltip" data-placement="top" title="Click to view Overall Leaderboard" style="color:white;display:block;">Leaderboard (Overall) <span class="glyphicon glyphicon-forward"></span></a>
+    </div>
+    <div class="col-sm-12">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active text-center" style="width:33.33%;">
+                <a class="whiteBorder" href="http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0#weekly_score" aria-controls="weekly_score" role="tab" data-toggle="tab" style="margin:0;">Weekly</a>
+            </li>
+            <li role="presentation" class="text-center" style="width:33.33%;">
+                <a class="whiteBorder" href="http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0#monthly_score" aria-controls="monthly_score" role="tab" data-toggle="tab" style="margin:0;">Monthly</a>
+            </li>
+            <li role="presentation" class="text-center" style="width:33.33%;">
+                <a class="whiteBorder" href="http://practice.geeksforgeeks.org/problems/squares-in-nn-chessboard/0#overall" aria-controls="overall" role="tab" data-toggle="tab" style="margin:0;">Overall</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="weekly_score">
+                <table class="table whiteBgColor" style="margin-bottom:0px;">
+                    <tbody>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">1</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Arsho97">
+                                            Arsho97                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        208                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">2</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Pooja%20Shukla">
+                                            Pooja Shukla                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        159                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">3</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Rahul%20Raj%202">
+                                            Rahul Raj 2                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        126                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">4</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=kd20">
+                                            kd20                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        116                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">5</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Tapan%20Modi%201">
+                                            Tapan Modi 1                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        115                                    </td>
+                                </tr>
+                                            <tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="http://practice.geeksforgeeks.org/user-profile.php?user=Uttam%20Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr></tbody>
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="monthly_score">
+                <table class="table whiteBgColor" style="margin-bottom:0px;">
+                    <tbody>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">1</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Arsho97">
+                                            Arsho97                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        484                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">2</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=kd20">
+                                            kd20                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        180                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">3</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Pooja%20Shukla">
+                                            Pooja Shukla                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        177                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">4</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Rajat%20Saxena%206">
+                                            Rajat Saxena 6                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        176                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">5</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=soorya_annadurai">
+                                            soorya_annadurai                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        172                                    </td>
+                                </tr>
+                                            <tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="http://practice.geeksforgeeks.org/user-profile.php?user=Uttam%20Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr></tbody>
+                </table>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="overall">
+                <table class="table whiteBgColor" style="margin-bottom:0px;">
+                    <tbody>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">1</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=sanjay05">
+                                            sanjay05                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        2538                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">2</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=akhayrutdinov">
+                                            akhayrutdinov                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        2028                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">3</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=wmlam">
+                                            wmlam                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        1700                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">4</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Jasleen%20Kaur%202">
+                                            Jasleen Kaur 2                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        1666                                    </td>
+                                </tr>
+                                                        <tr>
+                                    <td style="text-align:center;width:20%;">5</td>
+                                    <td style="text-align:center;width:60%;">
+                                        <a href="http://practice.geeksforgeeks.org/user-profile.php?user=Ravi%20Maurya">
+                                            Ravi Maurya                                        </a>
+                                    </td>
+                                    <td style="text-align:center;width:20%;">
+                                        1616                                    </td>
+                                </tr>
+                                            <tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="http://practice.geeksforgeeks.org/user-profile.php?user=Uttam%20Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr></tbody>
+                </table>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+      <div style="padding-top:10px; padding-bottom:5px;">
+	      <script async="" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/adsbygoogle.js.download"></script>
+        <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-9465609616171866" data-ad-slot="6791631232" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:300px;height:600px;" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/saved_resource(2).html"></iframe></ins></ins></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+       
+        <div class="box" style="margin-bottom: 25px;">
+          <table class="well table whiteBgColor" style="margin-bottom:-9px;">
+            <thead>
+              <tr>
+                <th class="text-center stopHover">
+                  Submissions
+                </th>
+              </tr>
+            </thead>
+            <tbody>           
+                <tr>
+                  <td style="text-align:center">
+                    <strong>
+                      <a href="http://practice.geeksforgeeks.org/submissions.php?pid=-1&amp;isAll=0&amp;isProPage=0&amp;offset=0">My Submissions</a>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <strong>
+                      <a href="http://practice.geeksforgeeks.org/my_questions.php?user=109576">My Subjective Questions</a>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">
+                    <strong>
+                      <a href="http://practice.geeksforgeeks.org/my_answers.php?user=109576">My Subjective Answers</a>
+                    </strong>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+         <!-- <br> -->
+  </div>
+<div class="row">
+    <div class="col-sm-12">
+      <a href="http://practice.geeksforgeeks.org/recentComments.php" class="btn btn-success form-control" type="button" style="background-color:#4CB96B;font-size: 18px;">Recent Comments</a>
+    </div>
+</div>
+  <!-- <div class="box" style="padding:5px 0px;">
+    <center>
+      <a class="btn btn-success whiteLink" href="contribute.php" style="font-size:16px;background-color:#3BA647;width:90%;margin-top:0px;"><b>Report A Bug</b></a>
+    </center>
+    <center>
+      <a class="btn btn-success whiteLink" href="recentComments.php" style="font-size:16px;background-color:#3BA647;width:90%;"><b>Recent Comments</b></a>
+    </center>
+  </div> -->
+            
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#leaderBoard').load('/topRanks.php');
+    //$('#trending').load('http://practice.geeksforgeeks.org/trending.php');
+  });
+</script>
+  <script>
+        $(window).load(function(){
+      $('body').find('#overall').find('table').find('tbody').append('<tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="/user-profile.php?user=Uttam Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr>');
+      $('body').find('#weekly_score').find('table').find('tbody').append('<tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="/user-profile.php?user=Uttam Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr>');
+      $('body').find('#monthly_score').find('table').find('tbody').append('<tr style="background-color:#b3ffb3"><td style="width:20%;text-align:center;">-</td><td style="text-align:center;width:60%;"><a href="/user-profile.php?user=Uttam Sinha">Uttam Sinha</a></td><td style="width:20%;text-align:center;">0</td></tr>');
+      $('.mainLeaderBoard').find("td:contains('Uttam Sinha')").parent().css('background-color','#b3ffb3');
+    }); 
+  </script>
+                </div>
+        </div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/XBwzv5Yrm_1.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/XBwzv5Yrm_1(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-7 col-xs-12" style="margin-top: 10px;">
+      <div class="">
+        <div class="col-sm-12 col-xs-12">
+          <div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/saved_resource(3).html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 1917px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+                                        <script>
+ /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    var disqus_config = function () {
+        this.page.url = 'http://practice.geeksforgeeks.org/problem-page.php?pid=149';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'problem-page.php?pid=149'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+        /*    (function() {  // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script'); 
+              s.src = '//geeksforgeekspractice.disqus.com/embed.js';                       
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })(); */
+	$(function()
+{
+    var disqus_div = $("#disqus_thread");
+    if (disqus_div.size() > 0 ) {
+        var ds_loaded = false,
+            top = disqus_div.offset().top, // WHERE TO START LOADING
+            disqus_data = disqus_div.data(),
+            check = function(){
+                if ( !ds_loaded && $(window).scrollTop() + $(window).height() > top ) {
+                    ds_loaded = true;
+                    for (var key in disqus_data) {
+                        if (key.substr(0,6) == 'disqus') {
+                            window['disqus_' + key.replace('disqus','').toLowerCase()] = disqus_data[key];
+                        }
+                    }
+
+                    var dsq = document.createElement('script'); 
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = 'http://geeksforgeekspractice.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                }
+		$("#comment").css("display", "none");
+            };
+
+        $(window).scroll(check);
+        check();
+    }
+});
+          </script>
+          <noscript>Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+		
+<footer class="footer col-sm-12" style="position:absolute;width:100%;bottom:-20px;">
+	<div class="row">
+		<div class="navhover col-xs-12 col-sm-4 col-md-4 text-center">
+			<span style="color:green;">@geeksforgeeks </span>
+			<a class="wtext" href="http://creativecommons.org/licenses/by-nc-nd/2.5/in/deed.en_US">Some rights reserved</a>
+		</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 text-center navhover">
+			<a class="wtext diff2" href="http://www.geeksforgeeks.org/about/contact-us/">Contact Us!</a>
+		</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 text-center navhover">
+			<a class="wtext navhover diff2" href="http://www.geeksforgeeks.org/about/">About Us!</a>
+		</div>
+		<div class="col-xs-12 col-sm-2 col-md-2 text-center navhover">
+            <a class="wtext navhover diff2" href="http://www.geeksforgeeks.org/privacy-policy/">Privacy Policy</a>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 text-center navhover">
+            <a class="wtext navhover diff2" href="http://practice.geeksforgeeks.org/contribute.php">Report A Bug</a>
+        </div>
+	</div>
+</footer>
+<script async="" type="text/javascript" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/fancybar.js.download" id="_fancybar_js"></script>
+	
+	
+
+	
+
+
+<script>
+                                                $(".showTag").click(function(){
+                                                         $(".showTag").css('display','none'); 
+                                                         $(".hideTag").css('display','');
+                                                         $(".topicTags").css('display','');
+                                                        
+                                                });
+                                                $(".hideTag").click(function(){
+                                                         $(".hideTag").css('display','none'); 
+                                                         $(".showTag").css('display','');
+                                                         $(".topicTags").css('display','none');
+                                                        
+                                                });
+						$(document).ready(function(){
+							$("#sendTestCaseMail").click(function(){
+								if($("#inputTestCase").val()=="")
+								{
+									alert("Input value can not be empty");
+									return false;
+								}
+								else if($("#outputTestCase").val()=="")
+								{
+									alert("Output value can not be empty");
+									return false;
+								}
+								$.ajax({
+							                    type:"POST",
+							                    url:"/ajax/testCasesMail.php",
+							                    data:{pid:pid ,input:$("#inputTestCase").val(),output:$("#outputTestCase").val()},
+							                    success:function(data){
+                        						    alert(data);
+                    								}
+                      							});
+
+							});
+						});
+  
+                                        </script>
+
+
+
+
+<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 210px; display: none; top: 52px; position: absolute; left: 365px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><iframe style="display: none;" src="./Squares in N_N Chessboard _ Practice _ GeeksforGeeks_files/saved_resource(4).html"></iframe></body></html>

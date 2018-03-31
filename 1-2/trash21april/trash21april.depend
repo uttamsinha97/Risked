@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1461253137 source:d:\trash21april\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1461255732 source:d:\trash21april\awertyuio.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1461255990 source:f:\ebook\pro\program\substringsearch.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1432804632 source:f:\ebook\pro\program\stringcomparison.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1461257299 source:d:\trash21april\trratygsvdxbnhj.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

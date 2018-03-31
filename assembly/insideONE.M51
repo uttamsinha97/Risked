@@ -1,0 +1,75 @@
+BL51 BANKED LINKER/LOCATER V6.11                                                        05/13/2017  14:10:23  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.11, INVOKED BY:
+Z:\\C51\BIN\BL51.EXE firstMMMM.obj TO insideONE RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  firstMMMM.obj (FIRSTMMMM)
+
+
+LINK MAP OF MODULE:  insideONE (FIRSTMMMM)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0055H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  insideONE (FIRSTMMMM)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        FIRSTMMMM
+  C:003DH         SYMBOL        LOOP1
+  C:004DH         SYMBOL        LOOP2
+  C:0045H         SYMBOL        MOVNOTZ
+  C:0053H         SYMBOL        STOP
+  C:0000H         LINE#         2
+  C:0030H         LINE#         4
+  C:0032H         LINE#         5
+  C:0034H         LINE#         6
+  C:0036H         LINE#         7
+  C:0037H         LINE#         8
+  C:0038H         LINE#         9
+  C:0039H         LINE#         10
+  C:003BH         LINE#         11
+  C:003DH         LINE#         12
+  C:003EH         LINE#         13
+  C:003FH         LINE#         14
+  C:0040H         LINE#         15
+  C:0041H         LINE#         16
+  C:0043H         LINE#         17
+  C:0045H         LINE#         18
+  C:0046H         LINE#         19
+  C:0047H         LINE#         20
+  C:0048H         LINE#         21
+  C:0049H         LINE#         22
+  C:004AH         LINE#         23
+  C:004BH         LINE#         24
+  C:004CH         LINE#         25
+  C:004DH         LINE#         26
+  C:004EH         LINE#         27
+  C:004FH         LINE#         28
+BL51 BANKED LINKER/LOCATER V6.11                                                      05/13/2017  14:10:23  PAGE 2
+
+
+  C:0050H         LINE#         29
+  C:0051H         LINE#         30
+  C:0053H         LINE#         31
+  -------         ENDMOD        FIRSTMMMM
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0027H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=85
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

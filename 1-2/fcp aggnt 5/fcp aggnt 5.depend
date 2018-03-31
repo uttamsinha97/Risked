@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1460897821 source:d:\fcp aggnt 5\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1460900841 source:d:\fcp aggnt 5\q31.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

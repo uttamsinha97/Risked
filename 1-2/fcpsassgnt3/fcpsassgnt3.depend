@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1460657222 source:d:\fcpsassgnt3\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1460655639 source:d:\fcpsassgnt3\mirror.c
+	<stdio.h>
+	<stdlib.h>
+

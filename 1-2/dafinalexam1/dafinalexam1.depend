@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1479894615 source:d:\dafinalexam1\main.c
+	<stdio.h>
+
+1479894850 source:d:\dafinalexam1\hellouttam.c
+	<stdio.h>
+
+1479896029 source:d:\dafinalexam1\offset.c
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+
+1479897602 source:d:\dafinalexam1\recursion.c
+	<stdio.h>
+

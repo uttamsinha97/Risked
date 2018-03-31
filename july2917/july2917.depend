@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1501350131 source:d:\july2917\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1513309526 source:d:\july2917\surbhi.c
+	<stdio.h>
+

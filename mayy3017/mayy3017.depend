@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1496133823 source:d:\mayy3017\main.c
+	<stdio.h>
+
+1496134405 source:d:\mayy3017\stackll.c
+	<stdio.h>
+	<stdlib.h>
+
+1496135966 source:d:\mayy3017\stackown.c
+	<stdio.h>
+	<stdlib.h>
+
+1496136283 source:d:\mayy3017\queue.c
+	<stdio.h>
+	<stdlib.h>
+
+1496147716 source:d:\mayy3017\randomnumbers.c
+	<stdio.h>
+	<stdlib.h>
+

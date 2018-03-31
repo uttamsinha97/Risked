@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1499241210 source:d:\julyyy0517\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1499243513 source:d:\julyyy0517\stringconcat.c
+	<stdio.h>
+	<string.h>
+
+1499274926 source:d:\julyyy0517\stack.c
+	<stdio.h>
+	<stdlib.h>
+
+1499276119 source:d:\julyyy0517\trash2.c
+	<stdio.h>
+
+1499278522 source:d:\julyyy0517\new.c
+	<stdio.h>
+

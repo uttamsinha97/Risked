@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1499403122 source:d:\july0817\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1499407923 source:d:\july0817\lexico.c
+	<stdio.h>
+	<string.h>
+

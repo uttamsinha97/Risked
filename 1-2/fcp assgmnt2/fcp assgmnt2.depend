@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1460648012 source:d:\fcp assgmnt2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

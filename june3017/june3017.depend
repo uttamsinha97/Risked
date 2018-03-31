@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1498826998 source:d:\june3017\selection.c
+	<stdio.h>
+
+1498830889 source:d:\june3017\secondlarge.c
+	<stdio.h>
+
+1498832117 source:d:\june3017\palindrome.c
+	<stdio.h>
+
+1498841997 source:d:\june3017\string1.c
+	<stdio.h>
+	<string.h>
+

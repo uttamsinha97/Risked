@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1476923054 source:d:\oct2016\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1476924061 source:d:\oct2016\seco.c
+	<stdio.h>
+	<stdlib.h>
+
+1476925346 source:d:\oct2016\new.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+

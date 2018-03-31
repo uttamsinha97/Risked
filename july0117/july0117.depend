@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1498879604 source:d:\july0117\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1498879923 source:d:\july0117\seriesofarm.c
+	<stdio.h>
+	<stdlib.h>
+

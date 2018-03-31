@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1463676903 source:d:\mayyy19\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1463678742 source:d:\mayyy19\selection.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1463679957 source:d:\mayyy19\bowler.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459075777 source:d:\stringshit\main.c
+	<stdio.h>
+	<stdlib.h>
+

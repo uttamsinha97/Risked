@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1490789215 source:d:\oopsproject\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<iostream>
+
+1490951832 source:d:\oopsproject\recursionmain.cpp
+	<iostream>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1476711724 source:d:\octo17\three.c
+	<stdio.h>
+
+1476709240 source:d:\octo17\main.c
+	<stdio.h>
+	<stdlib.h>
+

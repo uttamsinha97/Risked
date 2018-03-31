@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459490393 source:d:\randomdiscard\main.c
+	<stdio.h>
+	<stdlib.h>
+

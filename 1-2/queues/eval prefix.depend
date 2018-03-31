@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1473906249 source:d:\eval prefix\main.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+

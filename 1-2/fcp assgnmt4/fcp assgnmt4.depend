@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1460828113 source:d:\fcp assgnmt4\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1460828844 source:d:\fcp assgnmt4\q21.c
+	<stdio.h>
+	<stdlib.h>
+
+1460829822 source:d:\fcp assgnmt4\q22.c
+	<stdio.h>
+	<stdlib.h>
+
+1460830645 source:d:\fcp assgnmt4\q23.c
+	<stdio.h>
+	<stdlib.h>
+
+1460831385 source:d:\fcp assgnmt4\q24.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1460832611 source:d:\fcp assgnmt4\q26.c
+	<stdio.h>
+	<stdlib.h>
+
+1460832853 source:d:\fcp assgnmt4\q27.c
+	<stdio.h>
+	<stdlib.h>
+

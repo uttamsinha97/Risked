@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="addlong.c" open="1" top="0" tabpos="18">
+		<Cursor position="149" topLine="6" />
+	</File>
+	<File name="dsexam2a.c" open="1" top="0" tabpos="12">
+		<Cursor position="173" topLine="0" />
+	</File>
+	<File name="dst1.c" open="1" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="dstest2a.c" open="1" top="0" tabpos="11">
+		<Cursor position="29" topLine="0" />
+	</File>
+	<File name="eval prefix.c" open="1" top="0" tabpos="7">
+		<Cursor position="722" topLine="46" />
+	</File>
+	<File name="evaluatepostfix.c" open="1" top="0" tabpos="4">
+		<Cursor position="34" topLine="0" />
+	</File>
+	<File name="growable.c" open="1" top="0" tabpos="5">
+		<Cursor position="1005" topLine="0" />
+	</File>
+	<File name="infixToPostFix.c" open="1" top="0" tabpos="3">
+		<Cursor position="808" topLine="16" />
+	</File>
+	<File name="linkedlist.c" open="1" top="0" tabpos="16">
+		<Cursor position="533" topLine="0" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1">
+		<Cursor position="95" topLine="114" />
+	</File>
+	<File name="nov10.c" open="1" top="0" tabpos="20">
+		<Cursor position="1261" topLine="50" />
+	</File>
+	<File name="oct6.c" open="1" top="0" tabpos="15">
+		<Cursor position="785" topLine="18" />
+	</File>
+	<File name="pushAndPop.c" open="1" top="0" tabpos="2">
+		<Cursor position="254" topLine="0" />
+	</File>
+	<File name="q.c" open="1" top="0" tabpos="14">
+		<Cursor position="1314" topLine="50" />
+	</File>
+	<File name="qn8.c" open="1" top="0" tabpos="17">
+		<Cursor position="2591" topLine="171" />
+	</File>
+	<File name="random.c" open="1" top="0" tabpos="13">
+		<Cursor position="356" topLine="0" />
+	</File>
+	<File name="revstring.c" open="1" top="0" tabpos="8">
+		<Cursor position="36" topLine="0" />
+	</File>
+	<File name="swap.c" open="1" top="0" tabpos="9">
+		<Cursor position="36" topLine="0" />
+	</File>
+	<File name="tower.c" open="1" top="0" tabpos="6">
+		<Cursor position="325" topLine="0" />
+	</File>
+	<File name="trash1.c" open="1" top="0" tabpos="19">
+		<Cursor position="886" topLine="18" />
+	</File>
+</CodeBlocks_layout_file>

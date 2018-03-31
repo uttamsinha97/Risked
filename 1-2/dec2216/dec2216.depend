@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1482387529 source:d:\dec2216\main.cpp
+	<iostream>
+
+1482388201 source:d:\dec2216\second.cc
+	<iostream>
+
+1482428845 source:d:\dec2216\seventh.cc
+	<iostream>
+

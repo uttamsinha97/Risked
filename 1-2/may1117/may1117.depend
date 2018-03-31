@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1494518204 source:d:\may1117\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<stdio.h>
+
+1494564325 source:d:\1-2\may1117\volume.cc
+	<iostream>
+	<stdlib.h>
+

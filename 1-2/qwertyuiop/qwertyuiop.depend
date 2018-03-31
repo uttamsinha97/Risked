@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459427998 source:d:\qwertyuiop\main.c
+	<stdio.h>
+	<stdlib.h>
+

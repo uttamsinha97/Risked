@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1491964276 source:d:\april1217\main.cpp
+	<iostream>
+	<cstdlib>
+
+1491966162 source:d:\april1217\studentmarks.cc
+	<iostream>
+
+1491970772 source:d:\april1217\queue.cc
+	<iostream>
+	<cstdlib>
+

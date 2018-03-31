@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1491372937 source:d:\oopsultrafinal\main.cpp
+	<iostream>
+	<iomanip>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+

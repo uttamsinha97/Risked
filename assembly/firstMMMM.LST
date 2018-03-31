@@ -1,0 +1,59 @@
+A51 MACRO ASSEMBLER  FIRSTMMMM                                                            05/13/2017 14:10:23 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.01
+OBJECT MODULE PLACED IN firstMMMM.OBJ
+ASSEMBLER INVOKED BY: Z:\C51\BIN\A51.EXE firstMMMM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0H
+0000 802E              2     SJMP 30H
+0030                   3     ORG 30H
+0030 A830              4     MOV R0,30H
+0032 A931              5     MOV R1,31H
+0034 AA32              6     MOV R2,32H
+0036 E8                7     MOV A,R0
+0037 C3                8     CLR C
+0038 99                9     SUBB A,R1
+0039 6018             10     JZ STOP
+003B 4008             11     JC MOVNOTZ
+003D E6               12     LOOP1:MOV A,@R0
+003E F7               13     MOV @R1,A
+003F 08               14     INC R0
+0040 09               15     INC R1
+0041 DAFA             16     DJNZ R2,LOOP1
+0043 800E             17     SJMP STOP
+0045 E8               18     MOVNOTZ:MOV A,R0
+0046 2A               19     ADD A,R2
+0047 F8               20     MOV R0,A
+0048 18               21     DEC R0
+0049 E9               22     MOV A,R1
+004A 2A               23     ADD A,R2
+004B F9               24     MOV R1,A
+004C 19               25     DEC R1
+004D E6               26     LOOP2:MOV A,@R0
+004E F7               27     MOV @R1,A
+004F 18               28     DEC R0
+0050 19               29     DEC R1
+0051 DAFA             30     DJNZ R2,LOOP2
+0053 80FE             31     STOP:SJMP STOP
+                      32     END
+A51 MACRO ASSEMBLER  FIRSTMMMM                                                            05/13/2017 14:10:23 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP1. . . . . . .  C ADDR   003DH   A   
+LOOP2. . . . . . .  C ADDR   004DH   A   
+MOVNOTZ. . . . . .  C ADDR   0045H   A   
+STOP . . . . . . .  C ADDR   0053H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

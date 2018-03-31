@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1459077217 source:d:\wertyu\main.c
+	<stdio.h>
+	<stdlib.h>
+

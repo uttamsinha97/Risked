@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1478971139 source:d:\novem1216\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1478976486 source:d:\novem1216\second.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

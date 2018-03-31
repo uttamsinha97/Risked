@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1486486126 source:d:\feb0717\second.cc
+	<iostream>
+	<cstdlib>
+
+1486485008 source:d:\feb0717\main.cpp
+	<iostream>
+

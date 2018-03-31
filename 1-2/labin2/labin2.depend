@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1461248090 source:d:\labin2\sec.c
+	<stdio.h>
+	<stdlib.h>
+
+1461249695 source:d:\labin2\pro.c
+	<stdio.h>
+	<stdlib.h>
+

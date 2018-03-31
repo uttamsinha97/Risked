@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1456156551 source:d:\calendarlab\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1456166105 source:d:\calendarlab\calrev.c
+	<stdio.h>
+	<stdlib.h>
+
+1456159214 source:d:\calendarlab\calnnuts.c
+	<stdio.h>
+	<stdlib.h>
+
+1456192961 source:d:\calendarlab\new.c
+	<stdio.h>
+	<stdlib.h>
+

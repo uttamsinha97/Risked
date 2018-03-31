@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1499064862 source:d:\junee0317\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1499065559 source:d:\junee0317\trash1.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1499067072 source:d:\junee0317\trash2.c
+	<stdio.h>
+	<stdlib.h>
+
+1499067386 source:d:\junee0317\trash3.c
+	<stdio.h>
+	<stdint.h>
+
+1499069295 source:d:\junee0317\trash4.c
+	<stdio.h>
+	<string.h>
+	<strings.h>
+
+1499070861 source:d:\junee0317\trash60.c
+	<stdio.h>
+	<string.h>
+
+1499073353 source:d:\junee0317\trash70.c
+	<stdio.h>
+	<stdlib.h>
+
+1499076606 source:d:\junee0317\trash100.c
+	<stdio.h>
+
+1499078305 source:d:\junee0317\trash111.c
+	<stdio.h>
+
+1499079148 source:d:\junee0317\trash200.c
+	<stdio.h>
+	<string.h>
+
+1499079576 source:d:\junee0317\3dmatrix.c
+	<stdio.h>
+
+1499105689 source:d:\junee0317\binary.c
+	<stdio.h>
+
+1499106415 source:d:\junee0317\mergesort.c
+	<stdio.h>
+	<conio.h>
+

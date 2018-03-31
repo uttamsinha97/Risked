@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1476678803 source:d:\oct17cqueu\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

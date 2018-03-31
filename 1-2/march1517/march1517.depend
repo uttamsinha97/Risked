@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1489552281 source:d:\march1517\main.cpp
+	<cstdlib>
+	<cmath>
+	<iostream>
+
+1489549346 source:d:\march1517\time.cc
+	<iostream>
+
+1489553427 source:d:\march1517\volume.cc
+	<iostream>
+
+1489554602 source:d:\march1517\octal.cc
+	<cstdlib>
+	<cmath>
+	<iostream>
+
+1489552281 source:d:\march1517\vtusit.cc
+	<iostream>
+	<string.h>
+

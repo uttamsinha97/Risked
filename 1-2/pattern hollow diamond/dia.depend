@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1460663488 source:d:\sonu\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1460663488 source:d:\pattern hollow diamond\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1455900966 source:d:\19febb\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1455902018 source:d:\19febb\righrdiamond.c
+	<stdio.h>
+	<stdlib.h>
+
+1455902535 source:d:\19febb\shutdown.c
+	<stdio.h>
+	<stdlib.h>
+

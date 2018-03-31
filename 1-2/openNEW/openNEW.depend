@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1491366449 source:d:\opennew\main.cpp
+	<iostream>
+	<iomanip>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<fstream>
+	<string.h>
+	<windows.h>
+

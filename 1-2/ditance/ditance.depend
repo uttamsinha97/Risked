@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1459784158 source:d:\ditance\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

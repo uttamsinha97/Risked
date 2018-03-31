@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1461259430 source:f:\ebook\pro\program\distpoint1.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1432848136 source:f:\ebook\pro\program\bowler.c
+	<stdio.h>
+	<stdlib.h>
+
+1461260686 source:d:\trash21avril\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1432804634 source:f:\ebook\pro\program\bitwiseoperation.c
+	<stdio.h>
+	<stdlib.h>
+

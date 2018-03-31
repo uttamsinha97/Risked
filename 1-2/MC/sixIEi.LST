@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  SIXIEI                                                               03/13/2017 09:22:59 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.01
+OBJECT MODULE PLACED IN sixIEi.OBJ
+ASSEMBLER INVOKED BY: Z:\C51\BIN\A51.EXE sixIEi.ASM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H
+0000 802E              2             SJMP 30H
+0030                   3     ORG 30H
+0030 E530              4             MOV A,30H
+0032 8532F0            5             MOV B,32H
+0035 A4                6             MUL AB
+0036 AAF0              7             MOV R2,B
+0038 F552              8             MOV 52H,A
+003A E531              9             MOV A,31H
+003C 8532F0           10             MOV B,32H
+003F A4               11             MUL AB
+0040 2A               12             ADD A,R2
+0041 F551             13             MOV 51H,A
+0043 7400             14             MOV A,#00
+0045 35F0             15             ADDC A,B
+0047 F550             16             MOV 50H,A
+0049 80FE             17     LP:SJMP LP
+                      18             END
+A51 MACRO ASSEMBLER  SIXIEI                                                               03/13/2017 09:22:59 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LP . . . . . . . .  C ADDR   0049H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

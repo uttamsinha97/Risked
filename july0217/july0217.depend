@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1498972303 source:d:\july0217\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+
+1499000772 source:d:\july0217\trash1.c
+	<stdio.h>
+
+1499002251 source:d:\july0217\frequency.c
+	<stdio.h>
+
+1499002996 source:d:\july0217\selection.c
+	<stdio.h>
+

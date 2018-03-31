@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1479047050 source:d:\november1316\second.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<math.h>
+
+1479042371 source:d:\november1316\third.c
+	<stdio.h>
+	<stdlib.h>
+
+1479037997 source:d:\november1316\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+

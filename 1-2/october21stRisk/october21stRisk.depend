@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1477074486 source:d:\october21strisk\main.c
+	<stdio.h>
+	<stdlib.h>
+

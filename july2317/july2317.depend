@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1500803835 source:d:\july2317\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1500804794 source:d:\july2317\sort01.c
+	<stdio.h>
+
+1500809192 source:d:\july2317\trash1.c
+	<stdio.h>
+
+1500829159 source:d:\july2317\removespaces.c
+	<stdio.h>
+	<string.h>
+
+1500829993 source:d:\july2317\arra.c
+	<stdio.h>
+

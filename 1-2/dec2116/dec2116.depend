@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1482298155 source:d:\dec2116\main.cpp
+	<iostream>
+
+1482302318 source:d:\dec2116\third.cc
+
+1482304190 source:d:\dec2116\fourth.cc
+	<iostream>
+
+1482323795 source:d:\dec2116\fifth.cc
+	<iostream>
+	<cstdlib>
+

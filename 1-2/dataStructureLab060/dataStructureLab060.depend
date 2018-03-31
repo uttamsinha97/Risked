@@ -1,0 +1,126 @@
+# depslib dependency file v1.0
+1473310034 source:/home/ise/dataStructureLab060/infixToPostFix.c
+	<stdio.h>
+	<stdlib.h>
+
+1473308418 source:/home/ise/dataStructureLab060/stack.c
+	<stdio.h>
+	<ctype.h>
+
+1473314646 source:/home/ise/dataStructureLab060/evaluatepostfix.c
+	<stdio.h>
+	<ctype.h>
+
+1473316232 source:/home/ise/dataStructureLab060/growable.c
+	<stdio.h>
+	<stdlib.h>
+
+1473914596 source:/home/ise/dataStructureLab060/tower.c
+	<stdio.h>
+
+1473912011 source:/home/ise/dataStructureLab060/eval prefix.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+
+1473918030 source:/home/ise/dataStructureLab060/revstring.c
+	<stdio.h>
+	<string.h>
+
+1473920035 source:/home/ise/dataStructureLab060/hanoi.c
+	<stdio.h>
+
+1474456670 source:/home/ise/dataStructureLab060/malloc.c
+	<stdio.h>
+	<stdlib.h>
+
+1474466022 source:/home/ise/dataStructureLab060/sizeptr.c
+	<stdio.h>
+	<stdlib.h>
+
+1474463121 source:/home/ise/dataStructureLab060/sizeofstruxct.c
+	<stdio.h>
+	<stdlib.h>
+
+1474464061 source:/home/ise/dataStructureLab060/callocdup.c
+	<stdio.h>
+	<stdlib.h>
+
+1474466642 source:/home/ise/dataStructureLab060/mallocdup.c
+	<stdio.h>
+	<stdlib.h>
+
+1475066450 source:/home/ise/dataStructureLab060/q.c
+	<stdio.h>
+
+1475061296 source:/home/ise/dataStructureLab060/dst1.c
+	<stdio.h>
+	<stdlib.h>
+
+1475061650 source:/home/ise/dataStructureLab060/dstest2a.c
+	<stdio.h>
+	<stdlib.h>
+
+1475063051 source:/home/ise/dataStructureLab060/dsexam2a.c
+	<stdio.h>
+	<stdlib.h>
+
+1475069481 source:/home/ise/dataStructureLab060/random.c
+	<stdio.h>
+
+1475639435 source:/home/ise/dataStructureLab060/oct6.c
+	<stdio.h>
+	<stdlib.h>
+
+1475649188 source:/home/ise/dataStructureLab060/linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+
+1477165358 source:/home/ise/dataStructureLab060/qn9b.c
+	<stdio.h>
+	<stdlib.h>
+
+1477164585 source:/home/ise/dataStructureLab060/qn09a.c
+	<stdio.h>
+	<stdlib.h>
+
+1477170871 source:/home/ise/dataStructureLab060/qn9c.c
+	<stdio.h>
+	<stdlib.h>
+
+1477172113 source:/home/ise/dataStructureLab060/question 9 c new.c
+	<stdio.h>
+	<stdlib.h>
+
+1477517428 source:/home/ise/dataStructureLab060/addlong.c
+	<stdio.h>
+	<stdlib.h>
+
+1477511843 source:/home/ise/dataStructureLab060/qn8.c
+	<stdio.h>
+	<stdlib.h>
+
+1477517115 source:/home/ise/dataStructureLab060/trash1.c
+	<stdio.h>
+	<stdlib.h>
+
+1478719705 source:/home/ise/dataStructureLab060/nov10.c
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+
+1478721556 source:/home/ise/dataStructureLab060/new.c
+	<stdio.h>
+	<stdlib.h>
+
+1478723831 source:/home/ise/dataStructureLab060/lab13.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<ctype.h>
+
+1478722238 source:/home/ise/dataStructureLab060/bst.c
+	<stdio.h>
+	<stdlib.h>
+

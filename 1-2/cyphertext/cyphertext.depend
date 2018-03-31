@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1459198146 source:d:\cyphertext\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

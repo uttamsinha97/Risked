@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1456940840 source:d:\hcf by consecutive shit\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1456942731 source:d:\hcf by consecutive shit\hcf.c
+	<stdio.h>
+	<stdlib.h>
+
+1456944100 source:d:\hcf by consecutive shit\array.c
+	<stdio.h>
+	<stdlib.h>
+

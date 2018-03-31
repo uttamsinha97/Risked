@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1497164594 source:d:\june1117\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1497165725 source:d:\june1117\duplicate.c
+	<stdio.h>
+	<stdlib.h>
+
+1497191587 source:d:\june1117\trash1.c
+	<stdio.h>
+	<stdio.h>
+	<string.h>
+
+1497192357 source:d:\june1117\swaps.c
+	<stdio.h>
+
+1497202749 source:d:\june1117\mergesort.c
+	<stdio.h>
+
+1497204648 source:d:\june1117\string1.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1497208284 source:d:\june1117\reversestring.c
+	<stdio.h>
+	<string.h>
+
+1497209128 source:d:\june1117\fib.c
+	<stdio.h>
+

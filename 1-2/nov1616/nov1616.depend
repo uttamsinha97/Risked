@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1479322858 source:d:\nov1616\addpoly.c
+	<stdio.h>
+	<stdlib.h>
+
+1479323392 source:d:\nov1616\random.c
+	<stdio.h>
+	<stdlib.h>
+

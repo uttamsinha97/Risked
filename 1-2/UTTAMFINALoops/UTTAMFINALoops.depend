@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1491376697 source:d:\uttamfinaloops\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<iostream>
+

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1490772047 source:d:\march2917\binaryfile.c
+	<stdio.h>
+
+1490772112 source:d:\march2917\file.c
+	<stdio.h>
+
+1490772169 source:d:\march2917\trash.c
+	<stdio.h>
+
+1490772711 source:d:\march2917\time.c
+	<stdio.h>
+	<time.h>
+
+1490772845 source:d:\march2917\avltree.c
+	<stdio.h>
+	<stdlib.h>
+
+1490778431 source:d:\march2917\sortstackrec.c
+	<stdio.h>
+	<stdlib.h>
+
+1490782942 source:d:\march2917\pro.cc
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

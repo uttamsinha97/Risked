@@ -1,0 +1,69 @@
+A51 MACRO ASSEMBLER  SIXINSIX                                                             03/13/2017 09:55:20 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.01
+OBJECT MODULE PLACED IN SIXiNsIX.OBJ
+ASSEMBLER INVOKED BY: Z:\C51\BIN\A51.EXE SIXiNsIX.ASM SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0H
+0000 802E              2             SJMP 30H
+0030                   3     ORG 30H
+0030 E542              4             MOV A,42H
+0032 8540F0            5             MOV B,40H
+0035 A4                6             MUL AB
+0036 A9F0              7             MOV R1,B
+0038 F553              8             MOV 53H,A
+003A E541              9             MOV A,41H
+003C 8542F0           10             MOV B,42H
+003F A4               11             MUL AB
+0040 29               12             ADD A,R1
+0041 FA               13             MOV R2,A
+0042 7400             14             MOV A,#00
+0044 35F0             15             ADDC A,B
+0046 FB               16             MOV R3,A
+0047 E540             17             MOV A,40H
+0049 8543F0           18             MOV B,43H
+004C A4               19             MUL AB
+004D FC               20             MOV R4,A
+004E ADF0             21             MOV R5,B
+0050 E541             22             MOV A,41H
+0052 8543F0           23             MOV B,43H
+0055 A4               24             MUL AB
+0056 2D               25             ADD A,R5
+0057 FD               26             MOV R5,A
+0058 7400             27             MOV A,#00
+005A 35F0             28             ADDC A,B
+005C FE               29             MOV R6,A
+005D EA               30             MOV A,R2
+005E 2C               31             ADD A,R4
+005F F552             32             MOV 52H,A
+0061 EB               33             MOV A,R3
+0062 3D               34             ADDC A,R5
+0063 F551             35             MOV 51H,A
+0065 7400             36             MOV A,#00
+0067 3D               37             ADDC A,R5
+0068 F551             38             MOV 51H,A
+006A 7400             39             MOV A,#00
+006C 3E               40             ADDC A,R6
+006D F550             41             MOV 50H,A
+006F 80FE             42     LP:SJMP LP
+                      43     END
+                                     
+A51 MACRO ASSEMBLER  SIXINSIX                                                             03/13/2017 09:55:20 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LP . . . . . . . .  C ADDR   006FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

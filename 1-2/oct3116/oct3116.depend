@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1477893355 source:d:\oct3116\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1477894219 source:d:\oct3116\addtoolong.c
+	<stdio.h>
+	<stdlib.h>
+
+1477899531 source:d:\oct3116\circularqueuelist.c
+	<stdio.h>
+

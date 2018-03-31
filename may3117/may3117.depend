@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1496168137 source:d:\may3117\main.c
+	<stdio.h>
+	<conio.h>
+
+1496168757 source:d:\may3117\bubblesortown.c
+	<stdio.h>
+
+1496168960 source:d:\may3117\ip.c
+	<conio.h>
+	<stdlib.h>
+
+1496169941 source:d:\may3117\armstrong.c
+	<stdlib.h>
+

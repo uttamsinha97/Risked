@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1460635913 source:d:\fcp assg\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1460636375 source:d:\fcp assg\q3.c
+	<stdio.h>
+	<stdlib.h>
+
+1460637438 source:d:\fcp assg\q6.c
+	<stdio.h>
+	<stdlib.h>
+
+1460638169 source:d:\fcp assg\q7.c
+	<stdio.h>
+	<stdlib.h>
+
+1460639652 source:d:\fcp assg\q10.c
+	<stdio.h>
+	<stdlib.h>
+
+1460640156 source:d:\fcp assg\q12.c
+	<stdio.h>
+	<stdlib.h>
+
+1460641052 source:d:\fcp assg\q14.c
+	<stdio.h>
+	<stdlib.h>
+
+1460641683 source:d:\fcp assg\q17.c
+	<stdio.h>
+	<stdlib.h>
+
+1460642486 source:d:\fcp assg\q11.c
+	<stdio.h>
+	<stdlib.h>
+
+1460642574 source:d:\fcp assg\q15.c
+	<stdio.h>
+	<stdlib.h>
+

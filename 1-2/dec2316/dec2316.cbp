@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dec2316" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/dec2316" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/dec2316" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="eighth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="eleventh.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="fifth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="fourteenth.cc" />
+		<Unit filename="fourth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="ninth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="second.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="seventh.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="sixth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="tenth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="third.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="thirteenth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="twelfth.cc">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

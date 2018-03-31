@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1499280240 source:d:\july0617\queue.c
+	<stdio.h>
+	<stdlib.h>
+
+1499281244 source:d:\july0617\trash1.c
+	<stdio.h>
+	<string.h>
+
+1499282239 source:d:\july0617\trash3.c
+	<stdio.h>
+	<string.h>
+
+1499286587 source:d:\july0617\trash40.c
+	<stdio.h>
+	<string.h>
+

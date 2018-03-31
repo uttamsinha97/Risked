@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1456416983 source:d:\25feb\reverseofdigit.c
+	<stdio.h>
+	<stdlib.h>
+
+1456417395 source:d:\25feb\copy.c
+	<stdio.h>
+	<stdlib.h>
+
+1456418002 source:d:\25feb\comparestring.c
+	<stdio.h>
+	<stdlib.h>
+

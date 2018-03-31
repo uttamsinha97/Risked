@@ -1,0 +1,123 @@
+# depslib dependency file v1.0
+1460906559 source:d:\fcp assignment\main_2.c
+	<stdio.h>
+	<stdlib.h>
+
+1460649436 source:d:\fcp assignment\2.c
+	<stdio.h>
+
+1460650740 source:d:\fcp assignment\3.c
+	<stdio.h>
+
+1460656762 source:d:\fcp assignment\invertedright triangle.c
+	<stdio.h>
+	<stdlib.h>
+
+1385316878 source:d:\fcp assignment\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907279 source:d:\fcp assignment\main_3.c
+	<stdio.h>
+
+1460907297 source:d:\fcp assignment\main_4.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907322 source:d:\fcp assignment\main_5.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907348 source:d:\fcp assignment\main_6.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907372 source:d:\fcp assignment\mirror.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907413 source:d:\fcp assignment\q10.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907454 source:d:\fcp assignment\q11.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907476 source:d:\fcp assignment\q12.c
+	<stdio.h>
+	<stdlib.h>
+
+1460640225 source:d:\fcp assignment\q13.c
+
+1460907500 source:d:\fcp assignment\q14.c
+	<stdio.h>
+	<stdlib.h>
+
+1460645031 source:d:\fcp assignment\q15.c
+
+1460907539 source:d:\fcp assignment\q17.c
+	<stdio.h>
+	<stdlib.h>
+
+1460910272 source:d:\fcp assignment\q21.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907598 source:d:\fcp assignment\q22.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907619 source:d:\fcp assignment\q23.c
+	<stdio.h>
+
+1460907630 source:d:\fcp assignment\q24.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1460832037 source:d:\fcp assignment\q25.c
+	<stdio.h>
+	<stdlib.h>
+
+1460907664 source:d:\fcp assignment\q26.c
+	<stdio.h>
+	<stdlib.h>
+
+1460833011 source:d:\fcp assignment\q27.c
+	<stdio.h>
+	<stdlib.h>
+
+1460898890 source:d:\fcp assignment\q29.c
+	<stdio.h>
+	<stdlib.h>
+
+1460906527 source:d:\fcp assignment\q3.c
+	<stdio.h>
+	<stdlib.h>
+
+1460899777 source:d:\fcp assignment\q30.c
+	<stdio.h>
+	<stdlib.h>
+
+1460901135 source:d:\fcp assignment\q31.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1460637156 source:d:\fcp assignment\q4.c
+	<stdio.h>
+	<stdlib.h>
+
+1460637438 source:d:\fcp assignment\q6.c
+	<stdio.h>
+	<stdlib.h>
+
+1460638169 source:d:\fcp assignment\q7.c
+	<stdio.h>
+	<stdlib.h>
+
+1460638315 source:d:\fcp assignment\q8.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1464350830 source:d:\home\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1464352829 source:d:\home\randomfinsearch.c
+	<stdio.h>
+	<stdlib.h>
+
+1464354438 source:d:\home\b.c
+	<stdio.h>
+	<stdlib.h>
+

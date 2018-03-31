@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1482475446 source:d:\dec2316\fourth.cc
+	<iostream>
+	<cstring>
+	<cstdio>
+

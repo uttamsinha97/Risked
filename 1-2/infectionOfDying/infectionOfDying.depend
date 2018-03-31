@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463659185 source:d:\infectionofdying\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

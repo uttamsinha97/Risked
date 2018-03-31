@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1473908252 source:d:\eval prefix 15 sep\main.c
+	<stdio.h>
+	<conio.h>
+	<string.h>
+

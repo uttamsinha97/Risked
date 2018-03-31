@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1458405399 source:d:\19march\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1458406106 source:d:\19march\partcqn2.c
+	<stdio.h>
+	<stdlib.h>
+
+1458407378 source:d:\19march\random.c
+	<stdio.h>
+	<stdlib.h>
+

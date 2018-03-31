@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1500866375 source:d:\july2417\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1500866891 source:d:\july2417\reverseevery.c
+	<stdio.h>
+	<string.h>
+
+1500894163 source:d:\july2417\tree.c
+	<stdio.h>
+	<stdlib.h>
+

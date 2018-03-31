@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1499530508 source:d:\julyy0817\main.c
+	<stdio.h>
+	<math.h>
+
+1499532440 source:d:\julyy0817\trash1.c
+	<stdio.h>
+	<stdlib.h>
+
+1499537148 source:d:\julyy0817\dll.c
+	<stdio.h>
+	<stdlib.h>
+
